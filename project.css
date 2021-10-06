@@ -1,0 +1,175 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color:#f1f1f1 ;
+}
+#video-container{
+    width: 100%;
+    height: 654px;
+}
+video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#content {
+    position:absolute ;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+    padding: 15%;
+    box-sizing: border-box;
+    font-size: 2em;
+  }
+/*____________________________________________________________*/
+#get{
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+#get h1{
+    font-size: 2.5em;
+}
+.resources{
+    width: 33.3%;
+    height: 200px;
+    padding: 0px 0px 100px 0px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1.2em;
+    color:  rgba(0, 0, 0, 0.5);
+    background-color: #f1f1f1;
+}
+.resources a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.resources a:hover{
+    font-size: 1.3em;
+    color: black;
+}
+/*______________________________________________________*/
+#topic, table{
+    margin-top: 10px;
+    width: 100%;
+    height: 1100px;
+    background-color: #f1f1f1;
+}
+tr{
+    width: 100%;
+    height: 350px;
+}
+td{
+    width: 50%;
+    height: 350px;
+}
+td img{
+    width: 100%;
+    height: 350px;
+}
+.text{
+    text-align: right;
+    padding-right: 2%;
+    box-sizing: border-box;
+    font-size: 2em;
+}
+.left{
+    text-align: left;
+    padding: 0% 0% 0% 2%;
+    box-sizing: border-box;
+}
+#more-topics{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    padding: 3%;
+    box-sizing: border-box;
+}
+button{
+    font-size: 0.8em;
+    padding: 1%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-style: italic;
+}
+button:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+}
+tr:hover{
+    background-color: lightgray;
+}
+tr:hover button{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+}
+tr:hover .ani1{
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+tr:hover .ani2{
+    animation-name: animation2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation1{
+    0%{transform: translate(0px, 0px);}
+    50%{transform: translate(20px,0px);}
+    100%{transform: translate(0px,0px)}
+}
+@keyframes animation2{
+    0%{transform: translate(0px, 0px);}
+    50%{transform: translate(-20px,0px);}
+    100%{transform: translate(0px,0px)}
+}
+@keyframes animation3{
+    0%{transform: translate(0px, 0px);}
+    50%{transform: translate(0px,20px);}
+    100%{transform: translate(0px,0px)}
+}
+/*___________________________________________________________*/
+@media screen and (max-width: 600px){
+    hr{
+        margin-top: 115px;
+    }
+    table{
+        margin-top: 65px;
+    }
+    .text{
+        display: none;
+    }
+    td img{
+        display: none;
+    }
+    .media1{
+        background-image: url("../images/media_chemistry.jpg");
+        background-size: 100% 350px;
+    }
+    .media2{
+        background-image: url("../images/media_mathematics.jpg");
+        background-size: 100% 350px;
+    }
+    .media3{
+        background-image: url("../images/media_physics.jpg");
+        background-size: 100% 350px;
+    }
+    tr:hover{
+        animation-name: animation3;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+/*___________________________________________________________________________*/
